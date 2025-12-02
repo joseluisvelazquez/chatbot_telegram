@@ -1,0 +1,34 @@
+id,texto,sentimiento
+1,"El camión de la ruta 15 siempre llega tarde en las mañanas.",negativo
+2,"Los choferes de la ruta 8 manejan muy rápido y no respetan los topes.",negativo
+3,"La parada del camión en la avenida principal no tiene sombra ni banquita.",negativo
+4,"Me gusta que ahora el camión pase cada 10 minutos, es más cómodo.",positivo
+5,"El semáforo del cruce frente a la universidad dura muy poco en verde para peatones.",negativo
+6,"El nuevo sistema de pago con tarjeta en el camión me parece muy práctico.",positivo
+7,"Hay muchos baches en la calle por donde pasa la ruta al centro.",negativo
+8,"El camión va muy lleno en las horas pico, casi no se puede subir.",negativo
+9,"Me parece bien que hayan agregado una ruta nocturna, ahora puedo regresar seguro.",positivo
+10,"El chofer no quiso respetar la tarifa de estudiante.",negativo
+11,"Los anuncios dentro del camión informando las nuevas rutas son muy claros.",positivo
+12,"En la app no aparece el horario actualizado de la ruta 3.",negativo
+13,"La ruta que pasa por el hospital casi nunca respeta los horarios publicados.",negativo
+14,"El chofer fue muy amable y esperó a que bajara con calma.",positivo
+15,"No hay suficiente iluminación en la parada del camión por las noches.",negativo
+16,"El aire acondicionado del camión casi nunca funciona.",negativo
+17,"Me gusta que ahora avisen por altavoz cuál es la siguiente parada.",positivo
+18,"El camión se salta algunas paradas cuando va muy lleno.",negativo
+19,"Las unidades nuevas son más cómodas y limpias.",positivo
+20,"La calle por donde pasa la ruta está muy congestionada por obras y no hay desvíos claros.",negativo
+21,"El conductor respeta los límites de velocidad y eso me hace sentir seguro.",positivo
+22,"La app de movilidad a veces se traba y no carga el mapa.",negativo
+23,"La frecuencia de paso mejoró mucho los fines de semana.",positivo
+24,"No hay señalización clara para saber dónde exactamente se toma la ruta al centro.",negativo
+25,"Los camiones ahora tienen rampa para personas con discapacidad, eso es muy bueno.",positivo
+26,"El camión pasó antes del horario marcado y lo perdí.",negativo
+27,"El servicio de transporte en general ha mejorado este semestre.",positivo
+28,"El chofer hablaba por teléfono mientras manejaba.",negativo
+29,"La ruta directa al campus ahorra mucho tiempo.",positivo
+30,"No estoy seguro del horario exacto de la ruta que pasa por mi colonia.",neutro
+31,"El camión pasó pero no estoy seguro si era el correcto.",neutro
+32,"No tengo queja ni comentario, solo quería verificar el horario.",neutro
+33,"El servicio estuvo normal, nada especial que comentar.",neutro
