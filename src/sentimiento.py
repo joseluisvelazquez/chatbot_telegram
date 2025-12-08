@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.naive_bayes import MultinomialNB
 from sklearn.metrics import classification_report, accuracy_score
+from .preprocesamiento import limpiar_texto
 import joblib
 
 from .preprocesamiento import limpiar_texto
@@ -56,17 +57,24 @@ def entrenar_modelo_sentimiento(ruta_dataset="data/quejas.csv"):
 # A4 — FUNCIÓN DE PREDICCIÓN LISTA PARA EL CHATBOT
 # -----------------------------------------------------------
 
-def predecir_sentimiento(texto: str):
-    modelo = joblib.load("modelos/modelo_sentimiento.pkl")
-    vectorizador = joblib.load("modelos/vectorizador_sentimiento.pkl")
+def predecir_sentimiento(texto: str) -> str:
+    t = limpiar_texto(texto)
 
+    # 🔹 Prioridad a emociones positivas primero
+    positivas = [
+        "feliz", "me encanta", "contento", "contenta", "alegre",
+        "emocionado", "emocionada", "que bonito"
+    ]
+    if any(p in t for p in positivas):
+        return "positivo"
 
-    texto_limpio = limpiar_texto(texto)
-    vector = vectorizador.transform([texto_limpio])
+    negativas = [
+        "odio", "estres", "enojo", "molest", "frustrad", "triste",
+        "cansado", "cansada", "harto", "harta", "estresado",
+        "estresada", "aburrido", "aburrida", "deprimido", "deprimida", "irritado", "irritada",
+        "puto  tráfico", "maldito tráfico", "pésimo servicio", "pesimo servicio"
+    ]
+    if any(n in t for n in negativas):
+        return "negativo"
 
-    pred = modelo.predict(vector)[0]
-    return pred
-
-
-if __name__ == "__main__":
-    entrenar_modelo_sentimiento()
+    return "neutro"

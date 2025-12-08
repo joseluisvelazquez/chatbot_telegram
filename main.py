@@ -1,4 +1,9 @@
-from src.chatbot import Chatbot
+from src.telegram_bot import main
+
+if __name__ == "__main__":
+    main()
+
+"""from src.chatbot import Chatbot
 
 if __name__ == "__main__":
     bot = Chatbot()
@@ -7,9 +12,9 @@ if __name__ == "__main__":
         texto = input("\nEscribe tu mensaje: ")
 
         if texto.lower() in ["salir", "quit", "exit"]:
-            print("Adiós 👋")
+            print("👋 Adiós")
             break
 
         respuesta = bot.procesar(texto)
         print(respuesta)
-  
+"""
